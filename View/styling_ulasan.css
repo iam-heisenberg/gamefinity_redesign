@@ -1,0 +1,335 @@
+:root{
+    --warnaBackground: #121212;
+    --merahAksen: #D32528; 
+    --abuAbuAksen: #232323;
+
+    --Bold: robotoBold;
+    --regular: robotoRegular; 
+    --light: robotoLight;
+}
+
+@font-face {
+    font-family: robotoBold;
+    src: url(../resource/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: robotoRegular;
+    src: url(../resource/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: robotoLight;
+    src: url(../resource/Roboto-Light.ttf);
+}
+
+body{
+    background-color: var(--warnaBackground) !important;
+}
+
+
+@media screen and (max-width: 540px) {
+    /* terpenting */
+    div.enkapsulasi{
+        margin: 4vh 8vw 2vh 8vw;
+    }
+    input.text_cari{
+        width: 85%;
+        font-size: 1.5em;
+        padding: 1%;
+    }
+    button.button_cari{
+        font-size: 1.5em;
+        padding: 1%;
+    }
+    p.textHeader{
+        font-size: 2em;
+    }
+    div.divisiHeader1{
+        margin-top: 2vh;
+    }
+    div.divisiHeader2{
+        margin-top: -1.5vh;
+    }
+    div.itemMenu{
+        font-size: 1.5em;
+    }
+    div.tombolMenu{
+        width: 1000px;
+    }
+
+    p.tulisanEditor{
+        font-size: 1.8em;
+    }
+    div.menuHot{
+        width: 65vw;
+        margin-right: 3vw;
+    }
+
+    p.judulHot{
+        font-size: 1.85vh;
+    }
+
+    p.writer{
+        font-size: 1.2vh;
+    }
+
+    p.tulisanEditor{
+        margin-top: 2vh;
+    }
+
+   
+    img.beritaGambar{
+        width: 100%;
+        height: 13vh;
+    }
+    a.itemBeritaBaru{
+        height: 15vh;
+        width: 100%;
+        margin-top: 0.8vh;
+        margin-bottom:1.5vh;
+        grid-template-columns: 30% auto;
+    }
+    div.deskripsiBerita{
+        margin-left: 3vw;
+        grid-template-rows: 50% 20%;
+    }
+
+    p.judulBerita{
+        font-size: 1.8vh;
+        height: 10vh;
+        
+    }
+
+    p.writerBerita{
+        font-size: 1.2vh;
+        margin-top: -1vh;
+    }
+
+    a.enkapsulasiMenuHot{
+        height: 32vh;
+    }
+
+    div.menuHot{
+        width: 60vw;
+    }
+
+   
+    div.navigationBar{
+        margin-left: -1.5vw;
+    }
+    /* kopi atas */
+    
+    
+}
+
+@media screen and (min-width:426px) and (max-width: 1200px){
+    /* terpenting */
+    input.text_cari{
+        width: 91%;
+        font-size: 1.5em;
+        padding: 1%;
+    }
+    button.button_cari{
+        font-size: 1.5em;
+        padding: 1%;
+    }
+    p.textHeader{
+        font-size: 3em;
+    }
+    div.divisiHeader1{
+        margin-top: 2vh;
+    }
+    div.divisiHeader2{
+        margin-top: -1.5vh;
+    }
+     /* kopi atas */
+}
+
+/* terpenting */
+.enkapsulasi{
+    margin: 4vh 10vw 2vh 10vw;
+}
+
+.cari{
+    background-color: var(--abuAbuAksen);
+    border: none;
+    border-radius: 10px;
+    padding: 1%;
+    width: 100%;
+   
+}
+
+.text_cari{
+    width: 96%;
+    background-color: var(--abuAbuAksen);
+    border: none;
+    font-size: 2em;
+    padding: 0;
+    color: white;
+}
+
+.button_cari{
+    background-color: var(--abuAbuAksen);
+    border: none;
+    color: gray;
+    font-size: 2em;
+    padding: 0;
+    margin-left: 1%;
+}
+
+.textHeader{
+    font-family: var(--Bold);
+    font-size: 3.5vw;
+    color: white;
+    margin: 0;
+}
+
+.textJudul{
+    font-family: var(--Bold);
+    color: white;
+    font-size: 5vw;
+}
+
+.divisiHeader1{
+    display:flex; 
+    margin-top: 5vh;
+    margin-left: 1%;
+}
+
+.divisiHeader2{
+    margin-top:-3vh;
+    margin-left: 1%;
+  
+}
+
+.navigationBar{
+    overflow-x: auto;
+    width: 100%;
+    height: 8vh;
+    padding: 1vh 1vw 1vh 0vw;
+    display: flex;
+    margin-top: 1vh;
+}
+
+.navigationBar::-webkit-scrollbar{
+    width: 0;
+    background: transparent;
+}
+
+.itemMenu{
+    font-size: 1.8em;
+    text-decoration: none;
+    margin-right: 1vw;
+    font-family: var(--regular);
+}
+
+.navigationBar a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.itemMenu a:hover{
+    background-color: var(--merahAksen);
+    color: white;
+    transition: 0.3s;
+}
+
+.tulisanEditor{
+    font-family: var(--Bold);
+    color: white;
+    font-size: 4em;
+    margin-top: 4vh;
+    margin-left: 1%;
+}
+
+.divisiEditorPick{
+    width: 100%;
+    display: flex;
+    overflow: auto;
+}
+
+.divisiEditorPick::-webkit-scrollbar{
+    width: 0;
+    background: transparent;
+}
+
+
+.enkapsulasiMenuHot{
+    text-decoration:none; 
+    margin-right: 3vw;
+    padding: 1%;
+    height: 45vh;
+}
+
+.menuHot{
+    width:18vw;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 50% 45% 5%;
+}
+
+.gambarHot{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.judulHot{
+    font-family: var(--Bold);
+    color: white;
+    font-size: 1.2em;
+    margin-top: 1vh;
+}
+
+.writer{
+    color: white;
+    font-family: var(--light);
+    padding: 0;
+    margin-top: -1vh;
+}
+
+.itemBeritaBaru{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 25% auto;
+    text-decoration: none;
+    padding: 1%;
+}
+
+.enkapsulasiMenuHot:hover{
+    background-color: var(--abuAbuAksen);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.beritaGambar{
+    width: 100%;
+    height: 18vh;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.deskripsiBerita{
+    margin-left:1.5vw;
+}
+
+.judulBerita{
+    font-family: var(--Bold);
+    color: white;
+    font-size: 2em;
+    height: 76%;
+}
+
+.writerBerita{
+    color: white;
+    font-family: var(--light);
+}
+
+.itemBeritaBaru:hover{
+    background-color: var(--abuAbuAksen);
+    border-radius: 15px;
+}

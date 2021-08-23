@@ -1,0 +1,219 @@
+:root{
+    --warnaBackground: #121212;
+    --merahAksen: #D32528; 
+    --abuAbuAksen: #232323;
+
+    --Bold: robotoBold;
+    --regular: robotoRegular; 
+    --light: robotoLight;
+}
+
+@font-face {
+    font-family: robotoBold;
+    src: url(../resource/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: robotoRegular;
+    src: url(../resource/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: robotoLight;
+    src: url(../resource/Roboto-Light.ttf);
+}
+
+body{
+    background-color: var(--warnaBackground) !important;
+}
+
+@media screen and (max-width: 540px) {
+   /* terpenting */
+    input.text_cari{
+        width: 85%;
+        font-size: 1.5em;
+        padding: 1%;
+    }
+    button.button_cari{
+        font-size: 1.5em;
+        padding: 1%;
+    }
+    p.textHeader{
+        font-size: 2em;
+    }
+    div.divisiHeader1{
+        margin-top: 2vh;
+    }
+    div.divisiHeader2{
+        margin-top: -1.5vh;
+    }
+    div.itemMenu{
+        font-size: 1.5em;
+    }
+    div.tombolMenu{
+        width: 1000px;
+    }
+    div.navigationBar{
+        margin-left: -1.5vw;
+    }
+    /* kopi atas */
+    
+    p.kategori{
+        font-size: 2em;
+    }
+
+    a.textKategori{
+        font-size: 1.5em;
+    }
+
+    
+}
+
+@media screen and (min-width:426px) and (max-width: 1200px){
+    /* terpenting */
+    input.text_cari{
+        width: 91%;
+        font-size: 1.5em;
+        padding: 1%;
+    }
+    button.button_cari{
+        font-size: 1.5em;
+        padding: 1%;
+    }
+    p.textHeader{
+        font-size: 3em;
+    }
+    div.divisiHeader1{
+        margin-top: 2vh;
+    }
+    div.divisiHeader2{
+        margin-top: -1.5vh;
+    }
+    /* kopi atas */
+}
+/* terpenting */
+.enkapsulasi{
+    margin: 4vh 10vw 2vh 10vw;
+}
+
+.cari{
+    background-color: var(--abuAbuAksen);
+    border: none;
+    border-radius: 10px;
+    padding: 1%;
+    width: 100%;
+   
+}
+
+.text_cari{
+    width: 96%;
+    background-color: var(--abuAbuAksen);
+    border: none;
+    font-size: 2em;
+    padding: 0;
+    color: white;
+}
+
+.button_cari{
+    background-color: var(--abuAbuAksen);
+    border: none;
+    color: gray;
+    font-size: 2em;
+    padding: 0;
+    margin-left: 1%;
+}
+
+.textHeader{
+    font-family: var(--Bold);
+    font-size: 3.5vw;
+    color: white;
+    margin: 0;
+}
+
+.textJudul{
+    font-family: var(--Bold);
+    color: white;
+    font-size: 5vw;
+}
+
+.divisiHeader1{
+    display:flex; 
+    margin-top: 5vh;
+    margin-left: 1%;
+}
+
+.divisiHeader2{
+    margin-top:-3vh;
+    margin-left: 1%;
+  
+}
+
+.navigationBar{
+    overflow-x: auto;
+    width: 100%;
+    height: 8vh;
+    padding: 1vh 1vw 1vh 0vw;
+    display: flex;
+    margin-top: 1vh;
+    margin-left: 0.2vw;
+}
+
+.navigationBar::-webkit-scrollbar{
+    width: 0;
+    background: transparent;
+}
+
+.itemMenu{
+    font-size: 1.8em;
+    text-decoration: none;
+    margin-right: 1vw;
+    font-family: var(--regular);
+}
+
+.navigationBar a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.itemMenu a:hover{
+    background-color: var(--merahAksen);
+    color: white;
+    transition: 0.3s;
+}
+/* kopi atas */
+
+.kategori{
+    font-family: var(--Bold);
+    font-size: 4em;
+    color: white;
+    margin-left: 1%;
+}
+
+.textKategori{
+    color: white;
+    font-size: 2em;
+    font-family: var(--light);
+    width: 100%;
+    height: 100%;
+    padding: 1%;
+}
+
+.bungkusKategori a{
+    text-decoration:none;
+    border-radius: 15px;
+}
+
+.pembatas{
+    width: 30%;
+    height: 1px;
+    margin:1vh 0 1vh 1%; 
+}
+
+.bungkusKategori a:hover{
+    background-color: var(--merahAksen);
+    color: white;
+    transition: 0.3s;
+}
+

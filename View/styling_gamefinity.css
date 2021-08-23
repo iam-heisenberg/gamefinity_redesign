@@ -1,0 +1,203 @@
+:root{
+    --warnaBackground: #121212;
+    --merahAksen: #D32528; 
+    --abuAbuAksen: #232323;
+
+    --Bold: robotoBold;
+    --regular: robotoRegular; 
+    --light: robotoLight;
+}
+
+@font-face {
+    font-family: robotoBold;
+    src: url(../resource/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: robotoRegular;
+    src: url(../resource/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: robotoLight;
+    src: url(../resource/Roboto-Light.ttf);
+}
+
+body{
+    background-color: var(--warnaBackground) !important;
+}
+
+@media screen and (max-width: 540px) {
+   /* terpenting */
+    input.text_cari{
+        width: 85%;
+        font-size: 1.5em;
+        padding: 1%;
+    }
+    button.button_cari{
+        font-size: 1.5em;
+        padding: 1%;
+    }
+    p.textHeader{
+        font-size: 2em;
+    }
+    div.divisiHeader1{
+        margin-top: 2vh;
+    }
+    div.divisiHeader2{
+        margin-top: -1.5vh;
+    }
+    div.itemMenu{
+        font-size: 1.5em;
+    }
+    div.tombolMenu{
+        width: 1000px;
+    }
+    div.navigationBar{
+        margin-left: -1.5vw;
+    }
+
+    p.tulisanEditor{
+        font-size: 4.5vh;
+        margin-top: -0.1vh;
+    }
+    img.beritaGambar{
+        width: 100%;
+        height: 13vh;
+    }
+    a.itemBeritaBaru{
+        height: 15vh;
+        width: 100%;
+        margin-top: 0.8vh;
+        margin-bottom:1.5vh;
+        grid-template-columns: 30% auto;
+    }
+    div.deskripsiBerita{
+        margin-left: 3vw;
+        grid-template-rows: 50% 20%;
+    }
+
+    p.judulBerita{
+        font-size: 1.8vh;
+        height: 10vh;
+        
+    }
+
+    p.writerBerita{
+        font-size: 1.2vh;
+        margin-top: -1vh;
+    }
+    /* kopi atas */
+
+    div.deskripsiKami{
+        font-size: 1.9vh;
+    }
+}
+
+.enkapsulasi{
+    margin: 4vh 10vw 2vh 10vw;
+}
+
+.cari{
+    background-color: var(--abuAbuAksen);
+    border: none;
+    border-radius: 10px;
+    padding: 1%;
+    width: 100%;
+   
+}
+
+.text_cari{
+    width: 96%;
+    background-color: var(--abuAbuAksen);
+    border: none;
+    font-size: 2em;
+    padding: 0;
+    color: white;
+}
+
+.button_cari{
+    background-color: var(--abuAbuAksen);
+    border: none;
+    color: gray;
+    font-size: 2em;
+    padding: 0;
+    margin-left: 1%;
+}
+
+.textHeader{
+    font-family: var(--Bold);
+    font-size: 3.5vw;
+    color: white;
+    margin: 0;
+}
+
+.textJudul{
+    font-family: var(--Bold);
+    color: white;
+    font-size: 5vw;
+}
+
+.divisiHeader1{
+    display:flex; 
+    margin-top: 5vh;
+    margin-left: 1%;
+}
+
+.divisiHeader2{
+    margin-top:-3vh;
+    margin-left: 1%;
+  
+}
+
+.navigationBar{
+    overflow-x: auto;
+    width: 100%;
+    height: 8vh;
+    padding: 1vh 1vw 1vh 0vw;
+    display: flex;
+    margin-top: 1vh;
+    margin-left: 0.2vw;
+}
+
+.navigationBar::-webkit-scrollbar{
+    width: 0;
+    background: transparent;
+}
+
+.itemMenu{
+    font-size: 1.8em;
+    text-decoration: none;
+    margin-right: 1vw;
+    font-family: var(--regular);
+}
+
+.navigationBar a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.itemMenu a:hover{
+    background-color: var(--merahAksen);
+    color: white;
+    transition: 0.3s;
+}
+.tulisanEditor{
+    font-family: var(--Bold);
+    color: white;
+    font-size: 4em;
+    margin-top: 4vh;
+    margin-left: 1%;
+}
+/* sampe sini pentingnya */
+
+.deskripsiKami{
+    width: 98%;
+    margin-left: 1%;
+    color: white;
+    font-family: var(--regular);
+    font-size: 1vw;
+    text-align: justify;
+}
