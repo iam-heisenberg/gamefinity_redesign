@@ -31,7 +31,7 @@
                 include "navigasiBar.php"
             ?>
         </div>
-        sdl;fjdls;fk
+        
         <!-- ----- -->
 
         <!-- editor's pick -->
